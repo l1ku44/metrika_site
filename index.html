@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный сайт кондитерской</title>
+
     <!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=114048955&amp;from=informer" target="_blank" rel="nofollow">
-    <img src="https://informer.yandex.ru/informer/114048955/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-         style="width:88px; height:31px; border:0;"
-         alt="Яндекс.Метрика"
-         title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
-        />
-</a>
-<!-- /Yandex.Metrika informer -->
+    <a href="https://metrika.yandex.ru/stat/?id=114048955&amp;from=informer" target="_blank" rel="nofollow">
+        <img src="https://informer.yandex.ru/informer/114048955/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+             style="width:88px; height:31px; border:0;"
+             alt="Яндекс.Метрика"
+             title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" />
+    </a>
+    <!-- /Yandex.Metrika informer -->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114048955', 'ym');
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114048955', 'ym');
 
-    ym(114048955, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/114048955" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+        ym(114048955, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/114048955" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-
-
-    <title>Учебный сайт</title>
-</head>
-<body>
-    <h1>Учебный сайт</h1>
-    <p>Практическая работа №2. Проверка работы Яндекс Метрики. Медведев П.М.</p> 
-    
-    <button>Проверить</button>
-</body>
-</html>
+    <!-- Скрипт для проверки работы счетчика по кнопке -->
+    <script>
+        function checkMetrika() {
+            // Проверяем, загрузилась ли функция ym (Яндекс.Метрика)
+            if (typeof ym === 'function') {
+                // Отправляем тестовый визит в Метрику, чтобы он точно появился в отчетах
+                ym(114048955, 'hit', '/test-button-click');
+                alert("✅ Успех! Яндекс.Метрика (счетчик 114048955) загружена и работает.\n\nТестовый визит отправлен в отчеты.");
+            } else {
+                alert
